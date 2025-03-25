@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EXCEL CALCULATION AND GRAPH PLOTTING</title>
+    <!--<link rel="stylesheet" href="C:\Users\GKISHOR5\OneDrive - azureford\Documents\training html and css\static\style.css",filename='style.css'>-->
+</head>
+<style>
+   * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+   }
+   body {
+     font-family: Arial, sans-serif;
+     height: 100vh;
+     background-image: url('img1.jpg'); /* Add your background image URL here */
+     background-size: cover;
+     background-position: center;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+   .login-container {
+     background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+     padding:80px;
+     border-radius: 10px;
+     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+     width: 100%;
+     max-width: 500px;
+     text-align: center;
+   }
+   h2 {
+     margin-bottom: 20px;
+     color: #333;
+     font-size: 26px;
+   }
+   .textbox {
+     margin-bottom: 20px;
+   }
+   .textbox input {
+     width: 100%;
+     padding: 12px;
+     margin: 8px 0;
+     border: 2px solid #ccc;
+     border-radius: 5px;
+     font-size: 16px;
+     transition: all 0.3s ease;
+   }
+   .textbox input:focus {
+     border-color: #007bff;
+     outline: none;
+     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+   }
+   .textbox input.error {
+     border-color: red;
+   }
+   .button-container {
+     margin-top: 20px;
+	 display:inline-block;
+   }
+   .login-btn {
+     background-color: #007bff;
+     color: white;
+     border: none;
+     padding: 12px 20px;
+     font-size: 18px;
+     cursor: pointer;
+     border-radius: 5px;
+     width: 100%;
+     transition: all 0.3s ease;
+   }
+   .login-btn:hover {
+     background-color: #0056b3;
+   }
+   .remember-me {
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     margin-top: 10px;
+   }
+   .remember-me input {
+     margin-right: 5px;
+   }
+   .extra-links {
+     margin-top: 20px;
+     font-size: 14px;
+   }
+   .extra-links a {
+     color: #007bff;
+     text-decoration: none;
+     transition: color 0.3s ease;
+   }
+   .extra-links a:hover {
+     color: #0056b3;
+   }
+   .error-message {
+     color: red;
+     font-size: 14px;
+     margin-top: 10px;
+   }
+   /* Forgot Password Form */
+   .forgot-password-form,
+   .create-account-form,
+   .change-password-form {
+     display: none;
+   }
+   /* Responsive Styles */
+   @media (max-width: 480px) {
+     .login-container {
+       padding: 20px;
+     }
+     h2 {
+       font-size: 22px;
+     }
+     .login-btn {
+       font-size: 16px;
+     }
+	}
+	.submit {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+</style>
+<body>
+    <form method="POST" enctype="multipart/form-data">
+        <div class="login-container">
+            <h1>EXCEL CALCULATION</h1>
+			<h2></h2>
+            <div class="textbox">
+                <input type="file" placeholder="Upload Your excel file" name="excel_file" required>
+            </div>
+            <div class="textbox">
+                <input type="number" placeholder="Enter The temperature" name="temperature" required>
+            </div>
+            <div class="button-container">
+				<a href=file:///C:/Users/GKISHOR5/OneDrive%20-%20azureford/Documents/training%20html%20and%20css/templates/output.html filename="ouput.html">
+					<button type="submit" class="login-btn">Submit</button>
+				</a>
+            </div>
+            <div class="button-container">
+                <button type="reset" class="login-btn">Reset</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
